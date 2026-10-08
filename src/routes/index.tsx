@@ -38,7 +38,7 @@ function Index() {
 
   const run = async () => {
     setErr("");
-    try { setOut(await transform(code, lang, mode, o)); }
+    try { setOut((await transform(code, lang, mode, o)) ?? ""); }
     catch (e) { setErr(e instanceof Error ? e.message.split("\n")[0] : "Kon code niet verwerken"); setOut(""); }
   };
   const paste = async () => { try { setCode(await navigator.clipboard.readText()); } catch { /* ignore */ } };
