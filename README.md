@@ -1,26 +1,12 @@
-# Code Companion
+# Squeeze
 
-Make an android app that lets you copy any code and choose to minify or prettify it, also add options to select what to strip and what not, like comments or tags.
-
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://squeezecode.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/1a83dba9-cd7a-4408-8b40-6aa96a278e78).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+Paste JavaScript, CSS, HTML, or JSON to minify or prettify it, with options to choose which content to strip.
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+bun install
+bun run dev
 ```
+
+Run `bun run test`, `bun run lint`, and `bun run build` to check changes.
